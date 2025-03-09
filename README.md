@@ -1,70 +1,11 @@
-# Getting Started with Create React App
+# Erstellen einer To-Do Liste mit React JS
+## GitHub verwenden
+Dieses Projekt ist vollständig, Schritt für Schritt auf GitHub gespeichert. Die [Commits](https://github.com/TimoAntoniak/todo-list/commits/main/) dienen als Checkpoints, bei denen man den akutellen Stand zu jedem Zeitpunkt holen kann. Dabei ist z.B. Kapitel 2: UseState der Stand **am Ende** von Kapitel 2, also da, wo alles zu UseState fertig ist.
+- [Kapitel 0: Initialisierung](https://github.com/TimoAntoniak/todo-list/tree/e47fbb6c8e918f20ee748b9621f690ed0f5f372c)
+- [Kapitel 1: Komponenten & JSX](https://github.com/TimoAntoniak/todo-list/tree/ff35d5caf100bf17c7ed9a51af506026c3b05c66)
+  - [Kapitel 1.1: Eine responsive Task](https://github.com/TimoAntoniak/todo-list/tree/c44c2e76ee20e467ad532bc32eb57db98cbfde17)
+  - [Kapitel 1.2: Umstellung auf Liste](https://github.com/TimoAntoniak/todo-list/tree/c359cda1748189dc90723db51619fb3c4152ce3a)
+- [Kapitel 2: UseState](https://github.com/TimoAntoniak/todo-list/tree/ef2c07bd0176129ea450a2cc82ea29dfe4e374da)
+- [Kapitel 3: UseEffect](https://github.com/TimoAntoniak/todo-list/tree/207fcf5fa12871b4ec971eaf3fb3ac78aa072151)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Damit könnt Ihr anschauen, wie der Projektorder zu welchem Zeitpunkt auszusehen hat. Man kann natürlich den Code daraus kopieren und bei sich einfügen – sofern alle Variablen etc. gleich heißen, sollte das kein Problem sein.
