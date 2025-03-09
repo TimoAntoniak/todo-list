@@ -1,7 +1,10 @@
-function Task({name, finished}) {
+function Task({name, finished, onClick}) {
 
     return (
-        <li className={`task ${finished ? "finished" : "unfinished"}`}>
+        <li
+        className={`task ${finished ? "finished" : "unfinished"}`}
+        onClick={() => onClick()}
+        >
             {name}
         </li>
     )
