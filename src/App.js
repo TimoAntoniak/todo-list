@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.scss';
 import Task from './Task';
 
 function App() {
 
-    const [taskList, setTaskList] = useState([
-        {name: "React lernen", finished: false},
-        {name: "Hausaufgaben machen", finished: false}
-    ])
+    const [taskList, setTaskList] = useState(() => {
+        const savedTodos = localStorage.getItem("taskList")
+        return savedTodos ? JSON.parse(savedTodos) : []
+    })
 
     function handleTaskClick(index) {
         let newTaskList = [...taskList];
@@ -29,6 +29,11 @@ function App() {
     function handleReset() {
         setTaskList([])
     }
+
+    useEffect(() => {
+        console.log("Updating taskList to:", taskList)
+        localStorage.setItem("taskList", JSON.stringify(taskList));
+    }, [taskList])
 
     return (
         <div className="App">
