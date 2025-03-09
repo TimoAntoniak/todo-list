@@ -15,9 +15,28 @@ function App() {
         setTaskList(newTaskList);
     }
 
+    function handleSubmit(event) {
+        event.preventDefault()
+        const taskInputValue = event.target.elements.taskInput.value;
+        const newTask = {
+            name: taskInputValue,
+            finished: false
+        }
+        setTaskList([...taskList, newTask])
+        event.target.elements.taskInput.value = ""
+    }
+
+    function handleReset() {
+        setTaskList([])
+    }
+
     return (
         <div className="App">
             <h1>Meine To-Do Liste</h1>
+            <form onSubmit={handleSubmit}>
+                <input type='text' placeholder='Task eingeben' name="taskInput"/>
+                <button type='submit'>Hinzufügen</button>
+            </form>
             <ul>
                 { taskList.map((task, index) => 
                     <Task 
@@ -28,6 +47,7 @@ function App() {
                     />
                 )}
             </ul>
+            <button onClick={() => handleReset()}>Reset</button>
         </div>
     );
 }
