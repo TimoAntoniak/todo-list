@@ -4,20 +4,29 @@ import Task from './Task';
 
 function App() {
 
-    const [task1, setTask1] = useState({name: "React lernen", finished: false});
+    const [taskList, setTaskList] = useState([
+        {name: "React lernen", finished: false},
+        {name: "Hausaufgaben machen", finished: false}
+    ])
 
-    function handleTask1Click() {
-        setTask1({
-            name: task1.name,
-            finished: !task1.finished
-        })
+    function handleTaskClick(index) {
+        let newTaskList = [...taskList];
+        newTaskList[index].finished = !newTaskList[index].finished;
+        setTaskList(newTaskList);
     }
 
     return (
         <div className="App">
             <h1>Meine To-Do Liste</h1>
             <ul>
-                <Task name={task1.name} finished={task1.finished} onClick={handleTask1Click}/>
+                { taskList.map((task, index) => 
+                    <Task 
+                    key={index} 
+                    name={task.name} 
+                    finished={task.finished} 
+                    onClick={() => handleTaskClick(index)}
+                    />
+                )}
             </ul>
         </div>
     );
