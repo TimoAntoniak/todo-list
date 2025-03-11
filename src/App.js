@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import './App.scss';
 import Task from './Task';
 
+import ChecklistIcon from '@mui/icons-material/Checklist';
+
 function App() {
 
     const [taskList, setTaskList] = useState(() => {
@@ -37,7 +39,7 @@ function App() {
 
     return (
         <div className="App">
-            <h1>Meine To-Do Liste</h1>
+            <h1><ChecklistIcon/> Meine To-Do Liste</h1>
             <form onSubmit={handleSubmit}>
                 <input type='text' placeholder='Task eingeben' name="taskInput"/>
                 <button type='submit'>Hinzufügen</button>
