@@ -17,6 +17,12 @@ function App() {
         setTaskList(newTaskList);
     }
 
+    function handleTaskDelete(index) {
+        let newTaskList = [...taskList];
+        newTaskList.splice(index, 1);
+        setTaskList(newTaskList);
+    }
+
     function handleSubmit(event) {
         event.preventDefault()
         const taskInputValue = event.target.elements.taskInput.value;
@@ -48,9 +54,10 @@ function App() {
                 { taskList.map((task, index) => 
                     <Task 
                     key={index} 
-                    name={task.name} 
+                    name={task.name}
                     finished={task.finished} 
                     onClick={() => handleTaskClick(index)}
+                    onDelete={() => handleTaskDelete(index)}
                     />
                 )}
             </ul>
